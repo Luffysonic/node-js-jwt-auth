@@ -27,7 +27,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to Luffysonic application." });
 });
-
+require('./app/routes/auth.routes')(app);
+require('./app/routes/user.routes')(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
