@@ -4,7 +4,9 @@
   "description": "Node.js Demo for JWT Authentication",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.ts",
+		"build": "npx tsc"
   },
   "repository": {
     "type": "git",
